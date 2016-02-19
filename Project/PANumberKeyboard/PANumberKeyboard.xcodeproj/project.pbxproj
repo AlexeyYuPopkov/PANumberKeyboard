@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C511BCBD1C7792B70035AC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCBC1C7792B70035AC02 /* AppDelegate.swift */; };
+		C511BCBF1C7792B70035AC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCBE1C7792B70035AC02 /* ViewController.swift */; };
+		C511BCC21C7792B70035AC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511BCC01C7792B70035AC02 /* Main.storyboard */; };
+		C511BCC41C7792B70035AC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C511BCC31C7792B70035AC02 /* Assets.xcassets */; };
+		C511BCC71C7792B70035AC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511BCC51C7792B70035AC02 /* LaunchScreen.storyboard */; };
+		C511BCD21C7792B70035AC02 /* PANumberKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCD11C7792B70035AC02 /* PANumberKeyboardTests.swift */; };
+		C511BCDD1C7792B70035AC02 /* PANumberKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCDC1C7792B70035AC02 /* PANumberKeyboardUITests.swift */; };
+		C511BCEE1C7792CF0035AC02 /* PADecimalKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCEB1C7792CF0035AC02 /* PADecimalKeyboardButton.swift */; };
+		C511BCEF1C7792CF0035AC02 /* PANumberKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCEC1C7792CF0035AC02 /* PANumberKeyboardView.swift */; };
+		C511BCF01C7792CF0035AC02 /* PANumberKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCED1C7792CF0035AC02 /* PANumberKeyboardViewController.swift */; };
+		C5F291B71C77939300B4F23F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F291B51C77939300B4F23F /* Images.xcassets */; };
+		C5F291B81C77939300B4F23F /* PANumberKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F291B61C77939300B4F23F /* PANumberKeyboardViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C511BCCE1C7792B70035AC02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C511BCB11C7792B70035AC02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C511BCB81C7792B70035AC02;
+			remoteInfo = PANumberKeyboard;
+		};
+		C511BCD91C7792B70035AC02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C511BCB11C7792B70035AC02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C511BCB81C7792B70035AC02;
+			remoteInfo = PANumberKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C511BCB91C7792B70035AC02 /* PANumberKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PANumberKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C511BCBC1C7792B70035AC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C511BCBE1C7792B70035AC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C511BCC11C7792B70035AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C511BCC31C7792B70035AC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C511BCC61C7792B70035AC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C511BCC81C7792B70035AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C511BCCD1C7792B70035AC02 /* PANumberKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PANumberKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C511BCD11C7792B70035AC02 /* PANumberKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardTests.swift; sourceTree = "<group>"; };
+		C511BCD31C7792B70035AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C511BCD81C7792B70035AC02 /* PANumberKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PANumberKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C511BCDC1C7792B70035AC02 /* PANumberKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardUITests.swift; sourceTree = "<group>"; };
+		C511BCDE1C7792B70035AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C511BCEB1C7792CF0035AC02 /* PADecimalKeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PADecimalKeyboardButton.swift; sourceTree = "<group>"; };
+		C511BCEC1C7792CF0035AC02 /* PANumberKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardView.swift; sourceTree = "<group>"; };
+		C511BCED1C7792CF0035AC02 /* PANumberKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardViewController.swift; sourceTree = "<group>"; };
+		C5F291B51C77939300B4F23F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C5F291B61C77939300B4F23F /* PANumberKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PANumberKeyboardViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C511BCB61C7792B70035AC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C511BCCA1C7792B70035AC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C511BCD51C7792B70035AC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C511BCB01C7792B70035AC02 = {
+			isa = PBXGroup;
+			children = (
+				C511BCBB1C7792B70035AC02 /* PANumberKeyboard */,
+				C511BCD01C7792B70035AC02 /* PANumberKeyboardTests */,
+				C511BCDB1C7792B70035AC02 /* PANumberKeyboardUITests */,
+				C511BCBA1C7792B70035AC02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C511BCBA1C7792B70035AC02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C511BCB91C7792B70035AC02 /* PANumberKeyboard.app */,
+				C511BCCD1C7792B70035AC02 /* PANumberKeyboardTests.xctest */,
+				C511BCD81C7792B70035AC02 /* PANumberKeyboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C511BCBB1C7792B70035AC02 /* PANumberKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C5F291B41C77939300B4F23F /* Resources */,
+				C511BCEA1C7792CF0035AC02 /* Classes */,
+				C511BCBC1C7792B70035AC02 /* AppDelegate.swift */,
+				C511BCBE1C7792B70035AC02 /* ViewController.swift */,
+				C511BCC01C7792B70035AC02 /* Main.storyboard */,
+				C511BCC31C7792B70035AC02 /* Assets.xcassets */,
+				C511BCC51C7792B70035AC02 /* LaunchScreen.storyboard */,
+				C511BCC81C7792B70035AC02 /* Info.plist */,
+			);
+			path = PANumberKeyboard;
+			sourceTree = "<group>";
+		};
+		C511BCD01C7792B70035AC02 /* PANumberKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				C511BCD11C7792B70035AC02 /* PANumberKeyboardTests.swift */,
+				C511BCD31C7792B70035AC02 /* Info.plist */,
+			);
+			path = PANumberKeyboardTests;
+			sourceTree = "<group>";
+		};
+		C511BCDB1C7792B70035AC02 /* PANumberKeyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C511BCDC1C7792B70035AC02 /* PANumberKeyboardUITests.swift */,
+				C511BCDE1C7792B70035AC02 /* Info.plist */,
+			);
+			path = PANumberKeyboardUITests;
+			sourceTree = "<group>";
+		};
+		C511BCEA1C7792CF0035AC02 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C511BCEB1C7792CF0035AC02 /* PADecimalKeyboardButton.swift */,
+				C511BCEC1C7792CF0035AC02 /* PANumberKeyboardView.swift */,
+				C511BCED1C7792CF0035AC02 /* PANumberKeyboardViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C5F291B41C77939300B4F23F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5F291B51C77939300B4F23F /* Images.xcassets */,
+				C5F291B61C77939300B4F23F /* PANumberKeyboardViewController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C511BCB81C7792B70035AC02 /* PANumberKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C511BCE11C7792B70035AC02 /* Build configuration list for PBXNativeTarget "PANumberKeyboard" */;
+			buildPhases = (
+				C511BCB51C7792B70035AC02 /* Sources */,
+				C511BCB61C7792B70035AC02 /* Frameworks */,
+				C511BCB71C7792B70035AC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PANumberKeyboard;
+			productName = PANumberKeyboard;
+			productReference = C511BCB91C7792B70035AC02 /* PANumberKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C511BCCC1C7792B70035AC02 /* PANumberKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C511BCE41C7792B70035AC02 /* Build configuration list for PBXNativeTarget "PANumberKeyboardTests" */;
+			buildPhases = (
+				C511BCC91C7792B70035AC02 /* Sources */,
+				C511BCCA1C7792B70035AC02 /* Frameworks */,
+				C511BCCB1C7792B70035AC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C511BCCF1C7792B70035AC02 /* PBXTargetDependency */,
+			);
+			name = PANumberKeyboardTests;
+			productName = PANumberKeyboardTests;
+			productReference = C511BCCD1C7792B70035AC02 /* PANumberKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C511BCD71C7792B70035AC02 /* PANumberKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C511BCE71C7792B70035AC02 /* Build configuration list for PBXNativeTarget "PANumberKeyboardUITests" */;
+			buildPhases = (
+				C511BCD41C7792B70035AC02 /* Sources */,
+				C511BCD51C7792B70035AC02 /* Frameworks */,
+				C511BCD61C7792B70035AC02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C511BCDA1C7792B70035AC02 /* PBXTargetDependency */,
+			);
+			name = PANumberKeyboardUITests;
+			productName = PANumberKeyboardUITests;
+			productReference = C511BCD81C7792B70035AC02 /* PANumberKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C511BCB11C7792B70035AC02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Alexey Popkov";
+				TargetAttributes = {
+					C511BCB81C7792B70035AC02 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					C511BCCC1C7792B70035AC02 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C511BCB81C7792B70035AC02;
+					};
+					C511BCD71C7792B70035AC02 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C511BCB81C7792B70035AC02;
+					};
+				};
+			};
+			buildConfigurationList = C511BCB41C7792B70035AC02 /* Build configuration list for PBXProject "PANumberKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C511BCB01C7792B70035AC02;
+			productRefGroup = C511BCBA1C7792B70035AC02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C511BCB81C7792B70035AC02 /* PANumberKeyboard */,
+				C511BCCC1C7792B70035AC02 /* PANumberKeyboardTests */,
+				C511BCD71C7792B70035AC02 /* PANumberKeyboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C511BCB71C7792B70035AC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C511BCC71C7792B70035AC02 /* LaunchScreen.storyboard in Resources */,
+				C5F291B71C77939300B4F23F /* Images.xcassets in Resources */,
+				C5F291B81C77939300B4F23F /* PANumberKeyboardViewController.xib in Resources */,
+				C511BCC41C7792B70035AC02 /* Assets.xcassets in Resources */,
+				C511BCC21C7792B70035AC02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C511BCCB1C7792B70035AC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C511BCD61C7792B70035AC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C511BCB51C7792B70035AC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C511BCBF1C7792B70035AC02 /* ViewController.swift in Sources */,
+				C511BCBD1C7792B70035AC02 /* AppDelegate.swift in Sources */,
+				C511BCEE1C7792CF0035AC02 /* PADecimalKeyboardButton.swift in Sources */,
+				C511BCEF1C7792CF0035AC02 /* PANumberKeyboardView.swift in Sources */,
+				C511BCF01C7792CF0035AC02 /* PANumberKeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C511BCC91C7792B70035AC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C511BCD21C7792B70035AC02 /* PANumberKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C511BCD41C7792B70035AC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C511BCDD1C7792B70035AC02 /* PANumberKeyboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C511BCCF1C7792B70035AC02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C511BCB81C7792B70035AC02 /* PANumberKeyboard */;
+			targetProxy = C511BCCE1C7792B70035AC02 /* PBXContainerItemProxy */;
+		};
+		C511BCDA1C7792B70035AC02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C511BCB81C7792B70035AC02 /* PANumberKeyboard */;
+			targetProxy = C511BCD91C7792B70035AC02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C511BCC01C7792B70035AC02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C511BCC11C7792B70035AC02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C511BCC51C7792B70035AC02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C511BCC61C7792B70035AC02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C511BCDF1C7792B70035AC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C511BCE01C7792B70035AC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C511BCE21C7792B70035AC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PANumberKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C511BCE31C7792B70035AC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PANumberKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C511BCE51C7792B70035AC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PANumberKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PANumberKeyboard.app/PANumberKeyboard";
+			};
+			name = Debug;
+		};
+		C511BCE61C7792B70035AC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PANumberKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PANumberKeyboard.app/PANumberKeyboard";
+			};
+			name = Release;
+		};
+		C511BCE81C7792B70035AC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PANumberKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PANumberKeyboard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C511BCE91C7792B70035AC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PANumberKeyboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PANumberKeyboard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C511BCB41C7792B70035AC02 /* Build configuration list for PBXProject "PANumberKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C511BCDF1C7792B70035AC02 /* Debug */,
+				C511BCE01C7792B70035AC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C511BCE11C7792B70035AC02 /* Build configuration list for PBXNativeTarget "PANumberKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C511BCE21C7792B70035AC02 /* Debug */,
+				C511BCE31C7792B70035AC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C511BCE41C7792B70035AC02 /* Build configuration list for PBXNativeTarget "PANumberKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C511BCE51C7792B70035AC02 /* Debug */,
+				C511BCE61C7792B70035AC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C511BCE71C7792B70035AC02 /* Build configuration list for PBXNativeTarget "PANumberKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C511BCE81C7792B70035AC02 /* Debug */,
+				C511BCE91C7792B70035AC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C511BCB11C7792B70035AC02 /* Project object */;
+}
