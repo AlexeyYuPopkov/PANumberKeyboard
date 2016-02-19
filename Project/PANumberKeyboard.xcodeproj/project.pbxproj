@@ -14,11 +14,6 @@
 		C511BCC71C7792B70035AC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511BCC51C7792B70035AC02 /* LaunchScreen.storyboard */; };
 		C511BCD21C7792B70035AC02 /* PANumberKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCD11C7792B70035AC02 /* PANumberKeyboardTests.swift */; };
 		C511BCDD1C7792B70035AC02 /* PANumberKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCDC1C7792B70035AC02 /* PANumberKeyboardUITests.swift */; };
-		C511BCEE1C7792CF0035AC02 /* PADecimalKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCEB1C7792CF0035AC02 /* PADecimalKeyboardButton.swift */; };
-		C511BCEF1C7792CF0035AC02 /* PANumberKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCEC1C7792CF0035AC02 /* PANumberKeyboardView.swift */; };
-		C511BCF01C7792CF0035AC02 /* PANumberKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCED1C7792CF0035AC02 /* PANumberKeyboardViewController.swift */; };
-		C5F291B71C77939300B4F23F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F291B51C77939300B4F23F /* Images.xcassets */; };
-		C5F291B81C77939300B4F23F /* PANumberKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F291B61C77939300B4F23F /* PANumberKeyboardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +47,6 @@
 		C511BCD81C7792B70035AC02 /* PANumberKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PANumberKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C511BCDC1C7792B70035AC02 /* PANumberKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardUITests.swift; sourceTree = "<group>"; };
 		C511BCDE1C7792B70035AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C511BCEB1C7792CF0035AC02 /* PADecimalKeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PADecimalKeyboardButton.swift; sourceTree = "<group>"; };
-		C511BCEC1C7792CF0035AC02 /* PANumberKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardView.swift; sourceTree = "<group>"; };
-		C511BCED1C7792CF0035AC02 /* PANumberKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardViewController.swift; sourceTree = "<group>"; };
-		C5F291B51C77939300B4F23F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C5F291B61C77939300B4F23F /* PANumberKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PANumberKeyboardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +97,6 @@
 		C511BCBB1C7792B70035AC02 /* PANumberKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				C5F291B41C77939300B4F23F /* Resources */,
-				C511BCEA1C7792CF0035AC02 /* Classes */,
 				C511BCBC1C7792B70035AC02 /* AppDelegate.swift */,
 				C511BCBE1C7792B70035AC02 /* ViewController.swift */,
 				C511BCC01C7792B70035AC02 /* Main.storyboard */,
@@ -135,25 +123,6 @@
 				C511BCDE1C7792B70035AC02 /* Info.plist */,
 			);
 			path = PANumberKeyboardUITests;
-			sourceTree = "<group>";
-		};
-		C511BCEA1C7792CF0035AC02 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C511BCEB1C7792CF0035AC02 /* PADecimalKeyboardButton.swift */,
-				C511BCEC1C7792CF0035AC02 /* PANumberKeyboardView.swift */,
-				C511BCED1C7792CF0035AC02 /* PANumberKeyboardViewController.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C5F291B41C77939300B4F23F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C5F291B51C77939300B4F23F /* Images.xcassets */,
-				C5F291B61C77939300B4F23F /* PANumberKeyboardViewController.xib */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C511BCC71C7792B70035AC02 /* LaunchScreen.storyboard in Resources */,
-				C5F291B71C77939300B4F23F /* Images.xcassets in Resources */,
-				C5F291B81C77939300B4F23F /* PANumberKeyboardViewController.xib in Resources */,
 				C511BCC41C7792B70035AC02 /* Assets.xcassets in Resources */,
 				C511BCC21C7792B70035AC02 /* Main.storyboard in Resources */,
 			);
@@ -291,9 +258,6 @@
 			files = (
 				C511BCBF1C7792B70035AC02 /* ViewController.swift in Sources */,
 				C511BCBD1C7792B70035AC02 /* AppDelegate.swift in Sources */,
-				C511BCEE1C7792CF0035AC02 /* PADecimalKeyboardButton.swift in Sources */,
-				C511BCEF1C7792CF0035AC02 /* PANumberKeyboardView.swift in Sources */,
-				C511BCF01C7792CF0035AC02 /* PANumberKeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
