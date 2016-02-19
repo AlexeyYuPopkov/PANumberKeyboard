@@ -1,0 +1,14 @@
+PODS:
+  - PANumberKeyboard (0.0.1)
+
+DEPENDENCIES:
+  - PANumberKeyboard (from `~/Documents/MyPods/PANumberKeyboard/PANumberKeyboard.podspec`)
+
+EXTERNAL SOURCES:
+  PANumberKeyboard:
+    :path: ~/Documents/MyPods/PANumberKeyboard/PANumberKeyboard.podspec
+
+SPEC CHECKSUMS:
+  PANumberKeyboard: df38a2e127741ca54d68ad0d188f24409faeaaec
+
+COCOAPODS: 0.38.2

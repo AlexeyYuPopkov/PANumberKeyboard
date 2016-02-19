@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author        = { "Alexey Popkov" => "alexey.yu.popkov@gmail.com" }
   s.platform      = :ios, "8.0"
   s.source        = { :git => "https://github.com/AlexeyYuPopkov/PANumberKeyboard.git", :tag => s.version.to_s, :commit => "516efacc6398211a9296a867476e05a8f329f33c" }
-  s.source_files  = "Classes/*.swift"
+  s.source_files  = "Classes/**/*.swift"
   s.framework     = 'Foundation'
 
 end

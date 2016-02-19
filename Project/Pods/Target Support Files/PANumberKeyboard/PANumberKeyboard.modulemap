@@ -1,0 +1,6 @@
+framework module PANumberKeyboard {
+  umbrella header "PANumberKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

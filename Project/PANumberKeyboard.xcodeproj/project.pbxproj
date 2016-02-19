@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14722551AFC2242A43424669 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6004A502E06DFC94FC74B8C5 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C511BCBD1C7792B70035AC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCBC1C7792B70035AC02 /* AppDelegate.swift */; };
 		C511BCBF1C7792B70035AC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCBE1C7792B70035AC02 /* ViewController.swift */; };
 		C511BCC21C7792B70035AC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511BCC01C7792B70035AC02 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		C511BCC71C7792B70035AC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511BCC51C7792B70035AC02 /* LaunchScreen.storyboard */; };
 		C511BCD21C7792B70035AC02 /* PANumberKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCD11C7792B70035AC02 /* PANumberKeyboardTests.swift */; };
 		C511BCDD1C7792B70035AC02 /* PANumberKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C511BCDC1C7792B70035AC02 /* PANumberKeyboardUITests.swift */; };
+		C5F291BA1C77984800B4F23F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C5F291B91C77984800B4F23F /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6004A502E06DFC94FC74B8C5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A40B4FA31C6A3BB737F37DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C511BCB91C7792B70035AC02 /* PANumberKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PANumberKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C511BCBC1C7792B70035AC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C511BCBE1C7792B70035AC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		C511BCD81C7792B70035AC02 /* PANumberKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PANumberKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C511BCDC1C7792B70035AC02 /* PANumberKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardUITests.swift; sourceTree = "<group>"; };
 		C511BCDE1C7792B70035AC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F291B91C77984800B4F23F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EF9E2D78DF859E8FB0C0E372 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14722551AFC2242A43424669 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +81,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9908FBCAF6156752D3F47F4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6004A502E06DFC94FC74B8C5 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9B4E360F521DE10994F9A20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A40B4FA31C6A3BB737F37DA /* Pods.debug.xcconfig */,
+				EF9E2D78DF859E8FB0C0E372 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C511BCB01C7792B70035AC02 = {
 			isa = PBXGroup;
 			children = (
+				C5F291B91C77984800B4F23F /* Podfile */,
 				C511BCBB1C7792B70035AC02 /* PANumberKeyboard */,
 				C511BCD01C7792B70035AC02 /* PANumberKeyboardTests */,
 				C511BCDB1C7792B70035AC02 /* PANumberKeyboardUITests */,
 				C511BCBA1C7792B70035AC02 /* Products */,
+				B9B4E360F521DE10994F9A20 /* Pods */,
+				9908FBCAF6156752D3F47F4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C511BCE11C7792B70035AC02 /* Build configuration list for PBXNativeTarget "PANumberKeyboard" */;
 			buildPhases = (
+				BE6C41CA6F4CCBE82DA74CB1 /* Check Pods Manifest.lock */,
 				C511BCB51C7792B70035AC02 /* Sources */,
 				C511BCB61C7792B70035AC02 /* Frameworks */,
 				C511BCB71C7792B70035AC02 /* Resources */,
+				37DBA8780107B235C8052D23 /* Embed Pods Frameworks */,
+				D7CC0B3C6E8C170FBAD0CBCB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +261,7 @@
 			files = (
 				C511BCC71C7792B70035AC02 /* LaunchScreen.storyboard in Resources */,
 				C511BCC41C7792B70035AC02 /* Assets.xcassets in Resources */,
+				C5F291BA1C77984800B4F23F /* Podfile in Resources */,
 				C511BCC21C7792B70035AC02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37DBA8780107B235C8052D23 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6C41CA6F4CCBE82DA74CB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7CC0B3C6E8C170FBAD0CBCB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C511BCB51C7792B70035AC02 /* Sources */ = {
@@ -397,6 +476,7 @@
 		};
 		C511BCE21C7792B70035AC02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A40B4FA31C6A3BB737F37DA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PANumberKeyboard/Info.plist;
@@ -408,6 +488,7 @@
 		};
 		C511BCE31C7792B70035AC02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9E2D78DF859E8FB0C0E372 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PANumberKeyboard/Info.plist;
