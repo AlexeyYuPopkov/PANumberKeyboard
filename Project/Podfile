@@ -1,7 +1,0 @@
-
-use_frameworks!
-
-platform :ios, '8.0'
-pod 'PANumberKeyboard' , :path => '~/Documents/MyPods/PANumberKeyboard/PANumberKeyboard.podspec'
-
-# , :path => '~/Documents/PodSample/MyLibrary.podspec'
