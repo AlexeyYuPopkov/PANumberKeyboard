@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ~/Documents/MyPods/PANumberKeyboard/PANumberKeyboard.podspec
 
 SPEC CHECKSUMS:
-  PANumberKeyboard: df38a2e127741ca54d68ad0d188f24409faeaaec
+  PANumberKeyboard: f5f2ccb950db9cefb58f78928289d15991727061
 
 COCOAPODS: 0.38.2

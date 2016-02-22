@@ -18,6 +18,6 @@
     "tag": "0.0.1",
     "commit": "516efacc6398211a9296a867476e05a8f329f33c"
   },
-  "source_files": "Classes/*.swift",
+  "source_files": "Classes/**/*.swift",
   "frameworks": "Foundation"
 }
