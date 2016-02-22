@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class PANumberKeyboardViewController: UIInputViewController
+@objc public class PANumberKeyboardViewController: UIInputViewController
 {
     @IBOutlet weak var keyboardView: UIView!
     

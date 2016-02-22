@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "PANumberKeyboard"
-  s.version       = "0.0.3"
+  s.version       = "0.0.4"
   s.summary       = "PANumberKeyboard is a UIViewController with custom decimal keyboard"
   s.homepage      = "https://github.com/AlexeyYuPopkov/PANumberKeyboard"
   s.license       = { :type => 'MIT', :file => 'LICENSE' }
