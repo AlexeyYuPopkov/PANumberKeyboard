@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PANumberKeyboardViewController: UIInputViewController
+public class PANumberKeyboardViewController: UIInputViewController
 {
     @IBOutlet weak var keyboardView: UIView!
     
@@ -19,9 +19,9 @@ class PANumberKeyboardViewController: UIInputViewController
     private var selectedBackspaceButtonBackgroundImage:UIImage?
     private var selectedReturnButtonBackgroundImage:UIImage?
     
-    var backspaceAction:((Void) -> Void)?
-    var newTextAction:((text:String) -> Void)?
-    var returnAction:((Void) -> Void)?
+    public var backspaceAction:((Void) -> Void)?
+    public var newTextAction:((text:String) -> Void)?
+    public var returnAction:((Void) -> Void)?
     
     @IBOutlet weak var backspaceButton: PADecimalKeyboardBackspaceButton!
     @IBOutlet weak var returnButton: PADecimalKeyboardReturnButtonButton!
@@ -30,15 +30,16 @@ class PANumberKeyboardViewController: UIInputViewController
     @IBOutlet weak private var zeroBigButton: PADecimalKeyboardZeroButton!
     @IBOutlet weak private var zeroSmallButton: PADecimalKeyboardZeroButton!
     
-    class func createDecimalKeyboard() -> PANumberKeyboardViewController
+    class public func createDecimalKeyboard() -> PANumberKeyboardViewController
     {
-        let nib = UINib(nibName: "PANumberKeyboardViewController", bundle: nil)
+        // object_getClass(PANumberKeyboardViewController)
+        let nib = UINib(nibName: "PANumberKeyboardViewController", bundle: NSBundle(forClass: PANumberKeyboardViewController.self))
         let objects = nib.instantiateWithOwner(self, options: nil)
         let vc = objects[0] as! PANumberKeyboardViewController;
         return vc
     }
     
-    override func viewDidLoad()
+    override public func viewDidLoad()
     {
         super.viewDidLoad()
         configureKeyboard()
@@ -50,18 +51,18 @@ class PANumberKeyboardViewController: UIInputViewController
         configureDecimalPointButton()
     }
     
-    override func updateViewConstraints()
+    override public func updateViewConstraints()
     {
         super.updateViewConstraints()
         // Add custom view sizing constraints here
     }
 
-    override func textWillChange(textInput: UITextInput?)
+    override public func textWillChange(textInput: UITextInput?)
     {
         // The app is about to change the document's contents. Perform any preparation here.
     }
 
-    override func textDidChange(textInput: UITextInput?)
+    override public func textDidChange(textInput: UITextInput?)
     {
         // The app has just changed the document's contents, the document context has been updated.
     }
@@ -79,7 +80,7 @@ extension PANumberKeyboardViewController
 // MARK: - Configuration Setters
 extension PANumberKeyboardViewController
 {
-    var allowDecimalPoint:Bool {
+    public var allowDecimalPoint:Bool {
         get {
             return privateAllowDecimalPoint
         }
@@ -89,7 +90,7 @@ extension PANumberKeyboardViewController
         }
     }
     
-    var decimalPointAsComma:Bool {
+    public var decimalPointAsComma:Bool {
         get {
             return privateDecimalPointAsComma
         }
@@ -99,7 +100,7 @@ extension PANumberKeyboardViewController
         }
     }
     
-    var textButtons:[UIButton] {
+    public var textButtons:[UIButton] {
         get {
             var buttons = Array<UIButton>()
             
@@ -115,7 +116,25 @@ extension PANumberKeyboardViewController
         }
     }
     
-    var allButtons:[UIButton] {
+    public var numberKeyboardReturnButton:UIButton {
+        get {
+            return returnButton
+        }
+    }
+    
+    public var numberKeyboardBackspaceButton:UIButton {
+        get {
+            return backspaceButton
+        }
+    }
+    
+    public var numberKeyboardView:UIView {
+        get {
+            return keyboardView
+        }
+    }
+    
+    public var allButtons:[UIButton] {
         get {
             var buttons = self.textButtons
             
@@ -126,32 +145,32 @@ extension PANumberKeyboardViewController
         }
     }
 
-    func setSelectedTextButtonBackgroundImage(image:UIImage) {
+    public func setSelectedTextButtonBackgroundImage(image:UIImage) {
         selectedTextButtonBackgroundImage = image
         configureSelectedButtonBackgroundImages()
     }
     
-    func setSelectedBackspaceButtonBackgroundImage(image:UIImage) {
+    public func setSelectedBackspaceButtonBackgroundImage(image:UIImage) {
         selectedBackspaceButtonBackgroundImage = image
         configureSelectedButtonBackgroundImages()
     }
     
-    func setSelectedReturnButtonBackgroundImage(image:UIImage) {
+    public func setSelectedReturnButtonBackgroundImage(image:UIImage) {
         selectedReturnButtonBackgroundImage = image
         configureSelectedButtonBackgroundImages()
     }
     
-    func setSelectedTextButtonBackgroundColor(color:UIColor) {
+    public func setSelectedTextButtonBackgroundColor(color:UIColor) {
         selectedTextButtonBackgroundImage = PANumberKeyboardViewController.createWithColor(color)
         configureSelectedButtonBackgroundImages()
     }
     
-    func setSelectedBackspaceButtonBackgroundColor(color:UIColor) {
+    public func setSelectedBackspaceButtonBackgroundColor(color:UIColor) {
         selectedBackspaceButtonBackgroundImage = PANumberKeyboardViewController.createWithColor(color)
         configureSelectedButtonBackgroundImages()
     }
     
-    func setSelectedReturnButtonBackgroundColor(color:UIColor) {
+    public func setSelectedReturnButtonBackgroundColor(color:UIColor) {
         selectedReturnButtonBackgroundImage = PANumberKeyboardViewController.createWithColor(color)
         configureSelectedButtonBackgroundImages()
     }

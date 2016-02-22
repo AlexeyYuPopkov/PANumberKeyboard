@@ -4,20 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PANumberKeyboard.xcscheme</key>
+		<key>PANumberKeyboardExample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C5EDD7C81C7B1E0400B6E925</key>
+		<key>C5EDD7691C7B1D8A00B6E925</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5EDD7D21C7B1E0400B6E925</key>
+		<key>C5EDD77D1C7B1D8A00B6E925</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5EDD7881C7B1D8A00B6E925</key>
 		<dict>
 			<key>primary</key>
 			<true/>

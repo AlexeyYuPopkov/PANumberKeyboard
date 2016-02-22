@@ -1,6 +1,6 @@
 //
-//  PANumberKeyboardUITests.swift
-//  PANumberKeyboardUITests
+//  PANumberKeyboardExampleUITests.swift
+//  PANumberKeyboardExampleUITests
 //
 //  Created by Alexey Popkov on 2/22/16.
 //  Copyright © 2016 Alexey Popkov. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class PANumberKeyboardUITests: XCTestCase {
+class PANumberKeyboardExampleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

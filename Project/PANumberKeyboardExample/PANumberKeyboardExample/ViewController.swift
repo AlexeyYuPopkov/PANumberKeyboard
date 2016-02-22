@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  PANumberKeyboard
+//  PANumberKeyboardExample
 //
 //  Created by Alexey Popkov on 2/22/16.
 //  Copyright © 2016 Alexey Popkov. All rights reserved.
 //
 
 import UIKit
+import PANumberKeyboard
 
 class ViewController: UIViewController, UITextFieldDelegate
 {
@@ -29,14 +30,14 @@ class ViewController: UIViewController, UITextFieldDelegate
         //        self.keyboardVC.setSelectedReturnButtonBackgroundColor(UIColor.whiteColor())
         //        self.keyboardVC.setSelectedBackspaceButtonBackgroundColor(UIColor.blackColor())
         
-        self.keyboardVC.returnButton.setTitle("Next", forState: .Normal)
+        self.keyboardVC.numberKeyboardReturnButton.setTitle("Next", forState: .Normal)
         
-        /*for button in self.keyboardVC.allButtons
-        {
-        let layer = button.layer
-        layer.masksToBounds = true
-        layer.cornerRadius = 2
-        }*/
+//        for button in self.keyboardVC.allButtons
+//        {
+//            let layer = button.layer
+//            layer.masksToBounds = true
+//            layer.cornerRadius = 2
+//        }
         
         self.keyboardVC.returnAction = { (Void) -> Void in
             // TODO: handle return button pressed
@@ -50,7 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate
             // TODO: handle insert new text
         }
         
-        textField.inputView = self.keyboardVC.keyboardView
+        textField.inputView = self.keyboardVC.numberKeyboardView
         textField.delegate = self
     }
     
@@ -60,4 +61,5 @@ class ViewController: UIViewController, UITextFieldDelegate
         return true;
     }
 }
+
 
