@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C55D3D401C7B30D30004E470 /* PADecimalKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D3D3B1C7B30D30004E470 /* PADecimalKeyboardButton.swift */; };
+		C55D3D411C7B30D30004E470 /* PANumberKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D3D3C1C7B30D30004E470 /* PANumberKeyboardViewController.swift */; };
+		C55D3D421C7B30D30004E470 /* BackspaceButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C55D3D3E1C7B30D30004E470 /* BackspaceButton@2x.png */; };
+		C55D3D431C7B30D30004E470 /* PANumberKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55D3D3F1C7B30D30004E470 /* PANumberKeyboardViewController.xib */; };
 		C5EDD7CD1C7B1E0400B6E925 /* PANumberKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = C5EDD7CC1C7B1E0400B6E925 /* PANumberKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5EDD7D41C7B1E0400B6E925 /* PANumberKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5EDD7C91C7B1E0400B6E925 /* PANumberKeyboard.framework */; };
 		C5EDD7D91C7B1E0400B6E925 /* PANumberKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDD7D81C7B1E0400B6E925 /* PANumberKeyboardTests.swift */; };
-		C5EDD7F31C7B1ECB00B6E925 /* PADecimalKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDD7EE1C7B1ECB00B6E925 /* PADecimalKeyboardButton.swift */; };
-		C5EDD7F41C7B1ECB00B6E925 /* PANumberKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDD7EF1C7B1ECB00B6E925 /* PANumberKeyboardViewController.swift */; };
-		C5EDD7F61C7B1ECB00B6E925 /* PANumberKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5EDD7F21C7B1ECB00B6E925 /* PANumberKeyboardViewController.xib */; };
-		C5EDD8071C7B2CAD00B6E925 /* BackspaceButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EDD8061C7B2CAD00B6E925 /* BackspaceButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,16 +27,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C55D3D3B1C7B30D30004E470 /* PADecimalKeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PADecimalKeyboardButton.swift; sourceTree = "<group>"; };
+		C55D3D3C1C7B30D30004E470 /* PANumberKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardViewController.swift; sourceTree = "<group>"; };
+		C55D3D3E1C7B30D30004E470 /* BackspaceButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackspaceButton@2x.png"; sourceTree = "<group>"; };
+		C55D3D3F1C7B30D30004E470 /* PANumberKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PANumberKeyboardViewController.xib; sourceTree = "<group>"; };
 		C5EDD7C91C7B1E0400B6E925 /* PANumberKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PANumberKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EDD7CC1C7B1E0400B6E925 /* PANumberKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PANumberKeyboard.h; sourceTree = "<group>"; };
 		C5EDD7CE1C7B1E0400B6E925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5EDD7D31C7B1E0400B6E925 /* PANumberKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PANumberKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EDD7D81C7B1E0400B6E925 /* PANumberKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardTests.swift; sourceTree = "<group>"; };
 		C5EDD7DA1C7B1E0400B6E925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5EDD7EE1C7B1ECB00B6E925 /* PADecimalKeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PADecimalKeyboardButton.swift; sourceTree = "<group>"; };
-		C5EDD7EF1C7B1ECB00B6E925 /* PANumberKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardViewController.swift; sourceTree = "<group>"; };
-		C5EDD7F21C7B1ECB00B6E925 /* PANumberKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PANumberKeyboardViewController.xib; sourceTree = "<group>"; };
-		C5EDD8061C7B2CAD00B6E925 /* BackspaceButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackspaceButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +58,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C55D3D3A1C7B30D30004E470 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C55D3D3B1C7B30D30004E470 /* PADecimalKeyboardButton.swift */,
+				C55D3D3C1C7B30D30004E470 /* PANumberKeyboardViewController.swift */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		C55D3D3D1C7B30D30004E470 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C55D3D3E1C7B30D30004E470 /* BackspaceButton@2x.png */,
+				C55D3D3F1C7B30D30004E470 /* PANumberKeyboardViewController.xib */,
+			);
+			name = Resources;
+			path = ../../Resources;
+			sourceTree = "<group>";
+		};
 		C5EDD7BF1C7B1E0400B6E925 = {
 			isa = PBXGroup;
 			children = (
-				C5EDD7ED1C7B1ECB00B6E925 /* Classes */,
-				C5EDD7F01C7B1ECB00B6E925 /* Resources */,
+				C55D3D3A1C7B30D30004E470 /* Classes */,
+				C55D3D3D1C7B30D30004E470 /* Resources */,
 				C5EDD7CB1C7B1E0400B6E925 /* PANumberKeyboard */,
 				C5EDD7D71C7B1E0400B6E925 /* PANumberKeyboardTests */,
 				C5EDD7CA1C7B1E0400B6E925 /* Products */,
@@ -94,26 +114,6 @@
 				C5EDD7DA1C7B1E0400B6E925 /* Info.plist */,
 			);
 			path = PANumberKeyboardTests;
-			sourceTree = "<group>";
-		};
-		C5EDD7ED1C7B1ECB00B6E925 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C5EDD7EE1C7B1ECB00B6E925 /* PADecimalKeyboardButton.swift */,
-				C5EDD7EF1C7B1ECB00B6E925 /* PANumberKeyboardViewController.swift */,
-			);
-			name = Classes;
-			path = ../Classes;
-			sourceTree = "<group>";
-		};
-		C5EDD7F01C7B1ECB00B6E925 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C5EDD8061C7B2CAD00B6E925 /* BackspaceButton@2x.png */,
-				C5EDD7F21C7B1ECB00B6E925 /* PANumberKeyboardViewController.xib */,
-			);
-			name = Resources;
-			path = ../Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,8 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5EDD7F61C7B1ECB00B6E925 /* PANumberKeyboardViewController.xib in Resources */,
-				C5EDD8071C7B2CAD00B6E925 /* BackspaceButton@2x.png in Resources */,
+				C55D3D421C7B30D30004E470 /* BackspaceButton@2x.png in Resources */,
+				C55D3D431C7B30D30004E470 /* PANumberKeyboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5EDD7F31C7B1ECB00B6E925 /* PADecimalKeyboardButton.swift in Sources */,
-				C5EDD7F41C7B1ECB00B6E925 /* PANumberKeyboardViewController.swift in Sources */,
+				C55D3D401C7B30D30004E470 /* PADecimalKeyboardButton.swift in Sources */,
+				C55D3D411C7B30D30004E470 /* PANumberKeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

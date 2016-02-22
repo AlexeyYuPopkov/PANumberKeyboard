@@ -1,0 +1,11 @@
+.DS_Store
+.svn
+*~
+*.pyc
+xcuserdata
+/build
+_last_build_vars.sh
+_last_revision.sh
+duplication.xml
+Coverage
+test-reports
