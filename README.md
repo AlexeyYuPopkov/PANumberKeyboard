@@ -1,5 +1,7 @@
 # PANumberKeyboard
+Swift 2.3
 Customizible Number Keyboard with optional decimal point
+https://www.youtube.com/watch?v=55QPbAQwGRM
 
 ### Install:
 ```sh
@@ -61,3 +63,5 @@ public var numberKeyboardReturnButton:UIButton // Return Button
 public var textButtons:[UIButton] // “0”-“9” and “.” Button Array
 public var allButtons:[UIButton] // Array of all buttons
 ```
+### Donates:
+money.yandex.ru/to/410014452669555
