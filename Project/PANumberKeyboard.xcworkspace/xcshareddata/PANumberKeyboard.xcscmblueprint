@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE0D86452DB0CD64FFB3CA0A70A8CCC2F478EE3E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AE0D86452DB0CD64FFB3CA0A70A8CCC2F478EE3E" : 0,
+    "5EE406F33D11E265EF0580547C13C0E4A72C1E62" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8FDA2168-A22D-404A-8FBA-6263209B2CBA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AE0D86452DB0CD64FFB3CA0A70A8CCC2F478EE3E" : "PANumberKeyboard\/",
+    "5EE406F33D11E265EF0580547C13C0E4A72C1E62" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PANumberKeyboard",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Project\/PANumberKeyboard.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/AlexeyYuPopkov\/test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EE406F33D11E265EF0580547C13C0E4A72C1E62"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AlexeyYuPopkov\/PANumberKeyboard.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE0D86452DB0CD64FFB3CA0A70A8CCC2F478EE3E"
+    }
+  ]
+}

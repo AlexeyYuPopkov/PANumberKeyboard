@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool
     {
-        print(range)
+        print(range, terminator: "")
         return true;
     }
 }

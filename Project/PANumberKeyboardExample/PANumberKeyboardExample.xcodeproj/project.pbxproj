@@ -14,8 +14,6 @@
 		C5EDD7731C7B1D8A00B6E925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EDD7711C7B1D8A00B6E925 /* Main.storyboard */; };
 		C5EDD7751C7B1D8A00B6E925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5EDD7741C7B1D8A00B6E925 /* Assets.xcassets */; };
 		C5EDD7781C7B1D8A00B6E925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EDD7761C7B1D8A00B6E925 /* LaunchScreen.storyboard */; };
-		C5EDD7831C7B1D8A00B6E925 /* PANumberKeyboardExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDD7821C7B1D8A00B6E925 /* PANumberKeyboardExampleTests.swift */; };
-		C5EDD78E1C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EDD78D1C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +30,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = C5EDD7D31C7B1E0400B6E925;
 			remoteInfo = PANumberKeyboardTests;
-		};
-		C5EDD77F1C7B1D8A00B6E925 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5EDD7621C7B1D8A00B6E925 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5EDD7691C7B1D8A00B6E925;
-			remoteInfo = PANumberKeyboardExample;
-		};
-		C5EDD78A1C7B1D8A00B6E925 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5EDD7621C7B1D8A00B6E925 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5EDD7691C7B1D8A00B6E925;
-			remoteInfo = PANumberKeyboardExample;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,10 +55,8 @@
 		C5EDD7741C7B1D8A00B6E925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5EDD7771C7B1D8A00B6E925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5EDD7791C7B1D8A00B6E925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5EDD77E1C7B1D8A00B6E925 /* PANumberKeyboardExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PANumberKeyboardExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EDD7821C7B1D8A00B6E925 /* PANumberKeyboardExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardExampleTests.swift; sourceTree = "<group>"; };
 		C5EDD7841C7B1D8A00B6E925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5EDD7891C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PANumberKeyboardExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5EDD78D1C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PANumberKeyboardExampleUITests.swift; sourceTree = "<group>"; };
 		C5EDD78F1C7B1D8A00B6E925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,20 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55D3D4D1C7B32810004E470 /* PANumberKeyboard.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5EDD77B1C7B1D8A00B6E925 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5EDD7861C7B1D8A00B6E925 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				C5EDD76A1C7B1D8A00B6E925 /* PANumberKeyboardExample.app */,
-				C5EDD77E1C7B1D8A00B6E925 /* PANumberKeyboardExampleTests.xctest */,
-				C5EDD7891C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,62 +153,19 @@
 			productReference = C5EDD76A1C7B1D8A00B6E925 /* PANumberKeyboardExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C5EDD77D1C7B1D8A00B6E925 /* PANumberKeyboardExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5EDD7951C7B1D8A00B6E925 /* Build configuration list for PBXNativeTarget "PANumberKeyboardExampleTests" */;
-			buildPhases = (
-				C5EDD77A1C7B1D8A00B6E925 /* Sources */,
-				C5EDD77B1C7B1D8A00B6E925 /* Frameworks */,
-				C5EDD77C1C7B1D8A00B6E925 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5EDD7801C7B1D8A00B6E925 /* PBXTargetDependency */,
-			);
-			name = PANumberKeyboardExampleTests;
-			productName = PANumberKeyboardExampleTests;
-			productReference = C5EDD77E1C7B1D8A00B6E925 /* PANumberKeyboardExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C5EDD7881C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5EDD7981C7B1D8A00B6E925 /* Build configuration list for PBXNativeTarget "PANumberKeyboardExampleUITests" */;
-			buildPhases = (
-				C5EDD7851C7B1D8A00B6E925 /* Sources */,
-				C5EDD7861C7B1D8A00B6E925 /* Frameworks */,
-				C5EDD7871C7B1D8A00B6E925 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5EDD78B1C7B1D8A00B6E925 /* PBXTargetDependency */,
-			);
-			name = PANumberKeyboardExampleUITests;
-			productName = PANumberKeyboardExampleUITests;
-			productReference = C5EDD7891C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C5EDD7621C7B1D8A00B6E925 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Alexey Popkov";
 				TargetAttributes = {
 					C5EDD7691C7B1D8A00B6E925 = {
 						CreatedOnToolsVersion = 7.2.1;
-					};
-					C5EDD77D1C7B1D8A00B6E925 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = C5EDD7691C7B1D8A00B6E925;
-					};
-					C5EDD7881C7B1D8A00B6E925 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = C5EDD7691C7B1D8A00B6E925;
 					};
 				};
 			};
@@ -266,8 +189,6 @@
 			projectRoot = "";
 			targets = (
 				C5EDD7691C7B1D8A00B6E925 /* PANumberKeyboardExample */,
-				C5EDD77D1C7B1D8A00B6E925 /* PANumberKeyboardExampleTests */,
-				C5EDD7881C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,20 +221,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5EDD77C1C7B1D8A00B6E925 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5EDD7871C7B1D8A00B6E925 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -326,36 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5EDD77A1C7B1D8A00B6E925 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5EDD7831C7B1D8A00B6E925 /* PANumberKeyboardExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5EDD7851C7B1D8A00B6E925 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5EDD78E1C7B1D8A00B6E925 /* PANumberKeyboardExampleUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C5EDD7801C7B1D8A00B6E925 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5EDD7691C7B1D8A00B6E925 /* PANumberKeyboardExample */;
-			targetProxy = C5EDD77F1C7B1D8A00B6E925 /* PBXContainerItemProxy */;
-		};
-		C5EDD78B1C7B1D8A00B6E925 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5EDD7691C7B1D8A00B6E925 /* PANumberKeyboardExample */;
-			targetProxy = C5EDD78A1C7B1D8A00B6E925 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C5EDD7711C7B1D8A00B6E925 /* Main.storyboard */ = {
@@ -413,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -452,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,54 +362,6 @@
 			};
 			name = Release;
 		};
-		C5EDD7961C7B1D8A00B6E925 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PANumberKeyboardExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PANumberKeyboardExample.app/PANumberKeyboardExample";
-			};
-			name = Debug;
-		};
-		C5EDD7971C7B1D8A00B6E925 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = PANumberKeyboardExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PANumberKeyboardExample.app/PANumberKeyboardExample";
-			};
-			name = Release;
-		};
-		C5EDD7991C7B1D8A00B6E925 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PANumberKeyboardExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PANumberKeyboardExample;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		C5EDD79A1C7B1D8A00B6E925 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = PANumberKeyboardExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.popkov.PANumberKeyboardExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PANumberKeyboardExample;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -549,24 +379,6 @@
 			buildConfigurations = (
 				C5EDD7931C7B1D8A00B6E925 /* Debug */,
 				C5EDD7941C7B1D8A00B6E925 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5EDD7951C7B1D8A00B6E925 /* Build configuration list for PBXNativeTarget "PANumberKeyboardExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5EDD7961C7B1D8A00B6E925 /* Debug */,
-				C5EDD7971C7B1D8A00B6E925 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5EDD7981C7B1D8A00B6E925 /* Build configuration list for PBXNativeTarget "PANumberKeyboardExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5EDD7991C7B1D8A00B6E925 /* Debug */,
-				C5EDD79A1C7B1D8A00B6E925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
