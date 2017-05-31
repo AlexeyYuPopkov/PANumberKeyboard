@@ -10,8 +10,8 @@ import UIKit
 
 enum ButtonActionType:Int
 {
-    case Backspace
-    case ReturnButton
+    case backspace
+    case returnButton
 }
 
 protocol PADecimalKeyboardButtonProtocol
@@ -107,9 +107,9 @@ class PADecimalKeyboardNineButton: PADecimalKeyboardTextButton
 
 class PADecimalKeyboardDotButton: PADecimalKeyboardTextButton
 {
-    private var privateDecimalPointAsComma = false
+    fileprivate var privateDecimalPointAsComma = false
     
-    private var privateDotText = "."
+    fileprivate var privateDotText = "."
     
     var decimalPointAsComma:Bool {
         get {
@@ -128,11 +128,11 @@ class PADecimalKeyboardDotButton: PADecimalKeyboardTextButton
         }
     }
     
-    private func configureButtonTitle(title:String)
+    fileprivate func configureButtonTitle(_ title:String)
     {
-        self.setTitle(title, forState: .Selected)
-        self.setTitle(title, forState: .Highlighted)
-        self.setTitle(title, forState: .Normal)
+        self.setTitle(title, for: .selected)
+        self.setTitle(title, for: .highlighted)
+        self.setTitle(title, for: UIControlState())
     }
     
     override func theButtonText() -> String? {
@@ -143,13 +143,13 @@ class PADecimalKeyboardDotButton: PADecimalKeyboardTextButton
 class PADecimalKeyboardBackspaceButton: PADecimalKeyboardButton
 {
     override func theButtonActionType() -> ButtonActionType? {
-        return ButtonActionType.Backspace
+        return ButtonActionType.backspace
     }
 }
 
 class PADecimalKeyboardReturnButtonButton: PADecimalKeyboardButton
 {
     override func theButtonActionType() -> ButtonActionType? {
-        return ButtonActionType.ReturnButton
+        return ButtonActionType.returnButton
     }
 }
