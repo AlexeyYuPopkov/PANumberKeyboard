@@ -8,61 +8,61 @@
 
 import UIKit
 
-@objc public class PANumberKeyboardViewController: UIInputViewController
+@objc open class PANumberKeyboardViewController: UIInputViewController
 {
     @IBOutlet weak var keyboardView: UIView!
     
-    private var privateAllowDecimalPoint = false
-    private var privateDecimalPointAsComma = false
+    fileprivate var privateAllowDecimalPoint = false
+    fileprivate var privateDecimalPointAsComma = false
     
-    private var selectedTextButtonBackgroundImage:UIImage?
-    private var selectedBackspaceButtonBackgroundImage:UIImage?
-    private var selectedReturnButtonBackgroundImage:UIImage?
+    fileprivate var selectedTextButtonBackgroundImage:UIImage?
+    fileprivate var selectedBackspaceButtonBackgroundImage:UIImage?
+    fileprivate var selectedReturnButtonBackgroundImage:UIImage?
     
-    public var backspaceAction:((Void) -> Void)?
-    public var newTextAction:((text:String) -> Void)?
-    public var returnAction:((Void) -> Void)?
+    open var backspaceAction:((Void) -> Void)?
+    open var newTextAction:((_ text:String) -> Void)?
+    open var returnAction:((Void) -> Void)?
     
     @IBOutlet weak var backspaceButton: PADecimalKeyboardBackspaceButton!
     @IBOutlet weak var returnButton: PADecimalKeyboardReturnButtonButton!
     
-    @IBOutlet weak private var dotButton: PADecimalKeyboardDotButton!
-    @IBOutlet weak private var zeroBigButton: PADecimalKeyboardZeroButton!
-    @IBOutlet weak private var zeroSmallButton: PADecimalKeyboardZeroButton!
+    @IBOutlet weak fileprivate var dotButton: PADecimalKeyboardDotButton!
+    @IBOutlet weak fileprivate var zeroBigButton: PADecimalKeyboardZeroButton!
+    @IBOutlet weak fileprivate var zeroSmallButton: PADecimalKeyboardZeroButton!
     
-    class public func createDecimalKeyboard() -> PANumberKeyboardViewController
+    class open func createDecimalKeyboard() -> PANumberKeyboardViewController
     {
         // object_getClass(PANumberKeyboardViewController)
-        let nib = UINib(nibName: "PANumberKeyboardViewController", bundle: NSBundle(forClass: PANumberKeyboardViewController.self))
-        let objects = nib.instantiateWithOwner(self, options: nil)
+        let nib = UINib(nibName: "PANumberKeyboardViewController", bundle: Bundle(for: PANumberKeyboardViewController.self))
+        let objects = nib.instantiate(withOwner: self, options: nil)
         let vc = objects[0] as! PANumberKeyboardViewController;
         return vc
     }
     
-    override public func viewDidLoad()
+    override open func viewDidLoad()
     {
         super.viewDidLoad()
         configureKeyboard()
     }
     
-    private func configureKeyboard()
+    fileprivate func configureKeyboard()
     {
         configureSelectedButtonBackgroundImages()
         configureDecimalPointButton()
     }
     
-    override public func updateViewConstraints()
+    override open func updateViewConstraints()
     {
         super.updateViewConstraints()
         // Add custom view sizing constraints here
     }
 
-    override public func textWillChange(textInput: UITextInput?)
+    override open func textWillChange(_ textInput: UITextInput?)
     {
         // The app is about to change the document's contents. Perform any preparation here.
     }
 
-    override public func textDidChange(textInput: UITextInput?)
+    override open func textDidChange(_ textInput: UITextInput?)
     {
         // The app has just changed the document's contents, the document context has been updated.
     }
@@ -70,7 +70,7 @@ import UIKit
 
 extension PANumberKeyboardViewController
 {
-    @IBAction func buttonPressedAction(button: PADecimalKeyboardButton)
+    @IBAction func buttonPressedAction(_ button: PADecimalKeyboardButton)
     {
         processActionType(button.theButtonActionType())
         processNewText(button.theButtonText())
@@ -106,7 +106,7 @@ extension PANumberKeyboardViewController
             
             for theView in keyboardView.subviews
             {
-                if theView.isKindOfClass(PADecimalKeyboardTextButton)
+                if theView.isKind(of: PADecimalKeyboardTextButton.self)
                 {
                     buttons.append(theView as! PADecimalKeyboardTextButton)
                 }
@@ -145,32 +145,32 @@ extension PANumberKeyboardViewController
         }
     }
 
-    public func setSelectedTextButtonBackgroundImage(image:UIImage) {
+    public func setSelectedTextButtonBackgroundImage(_ image:UIImage) {
         selectedTextButtonBackgroundImage = image
         configureSelectedButtonBackgroundImages()
     }
     
-    public func setSelectedBackspaceButtonBackgroundImage(image:UIImage) {
+    public func setSelectedBackspaceButtonBackgroundImage(_ image:UIImage) {
         selectedBackspaceButtonBackgroundImage = image
         configureSelectedButtonBackgroundImages()
     }
     
-    public func setSelectedReturnButtonBackgroundImage(image:UIImage) {
+    public func setSelectedReturnButtonBackgroundImage(_ image:UIImage) {
         selectedReturnButtonBackgroundImage = image
         configureSelectedButtonBackgroundImages()
     }
     
-    public func setSelectedTextButtonBackgroundColor(color:UIColor) {
+    public func setSelectedTextButtonBackgroundColor(_ color:UIColor) {
         selectedTextButtonBackgroundImage = PANumberKeyboardViewController.createWithColor(color)
         configureSelectedButtonBackgroundImages()
     }
     
-    public func setSelectedBackspaceButtonBackgroundColor(color:UIColor) {
+    public func setSelectedBackspaceButtonBackgroundColor(_ color:UIColor) {
         selectedBackspaceButtonBackgroundImage = PANumberKeyboardViewController.createWithColor(color)
         configureSelectedButtonBackgroundImages()
     }
     
-    public func setSelectedReturnButtonBackgroundColor(color:UIColor) {
+    public func setSelectedReturnButtonBackgroundColor(_ color:UIColor) {
         selectedReturnButtonBackgroundImage = PANumberKeyboardViewController.createWithColor(color)
         configureSelectedButtonBackgroundImages()
     }
@@ -179,15 +179,15 @@ extension PANumberKeyboardViewController
 // MARK: - Private
 extension PANumberKeyboardViewController
 {
-    private func configureDecimalPointButton()
+    fileprivate func configureDecimalPointButton()
     {
-        dotButton.hidden = !privateAllowDecimalPoint
-        zeroSmallButton.hidden = !privateAllowDecimalPoint
-        zeroBigButton.hidden = privateAllowDecimalPoint
+        dotButton.isHidden = !privateAllowDecimalPoint
+        zeroSmallButton.isHidden = !privateAllowDecimalPoint
+        zeroBigButton.isHidden = privateAllowDecimalPoint
         dotButton.decimalPointAsComma = decimalPointAsComma
     }
     
-    private func processActionType(actionType:ButtonActionType?)
+    fileprivate func processActionType(_ actionType:ButtonActionType?)
     {
         guard let theActionType = actionType else {
             return
@@ -195,14 +195,14 @@ extension PANumberKeyboardViewController
         
         switch theActionType
         {
-        case .Backspace:
+        case .backspace:
             processBackspace()
-        case .ReturnButton:
+        case .returnButton:
             processReturn()
         }
     }
     
-    private func processBackspace()
+    fileprivate func processBackspace()
     {
         if let theBackspaceAction = backspaceAction
         {
@@ -213,14 +213,14 @@ extension PANumberKeyboardViewController
         }
     }
     
-    private func processReturn()
+    fileprivate func processReturn()
     {
         if let theReturnAction = returnAction {
             theReturnAction()
         }
     }
     
-    private func processNewText(text:String?)
+    fileprivate func processNewText(_ text:String?)
     {
         guard let theText = text else {
             return
@@ -230,20 +230,20 @@ extension PANumberKeyboardViewController
         
         if let theNewTextAction = newTextAction
         {
-            theNewTextAction(text: theText)
+            theNewTextAction(theText)
         }
     }
     
-    private func defaultSelectedButtonImage() -> UIImage
+    fileprivate func defaultSelectedButtonImage() -> UIImage
     {
         struct imageInstance {
-            static let image = PANumberKeyboardViewController.createWithColor(UIColor.blackColor())
+            static let image = PANumberKeyboardViewController.createWithColor(UIColor.black)
         }
         
         return imageInstance.image
     }
     
-    private func configureSelectedButtonBackgroundImages()
+    fileprivate func configureSelectedButtonBackgroundImages()
     {
         if let theImage = selectedTextButtonBackgroundImage {
             setTextButtonsSelectedButtonBackgroundImage(theImage)
@@ -267,11 +267,11 @@ extension PANumberKeyboardViewController
         }
     }
     
-    private func setTextButtonsSelectedButtonBackgroundImage(image:UIImage)
+    fileprivate func setTextButtonsSelectedButtonBackgroundImage(_ image:UIImage)
     {
         for theView in keyboardView.subviews
         {
-            if theView.isKindOfClass(PADecimalKeyboardTextButton)
+            if theView.isKind(of: PADecimalKeyboardTextButton.self)
             {
                 let button = theView as! PADecimalKeyboardTextButton
                 setSelectedButtonImage(button, image:image)
@@ -279,26 +279,26 @@ extension PANumberKeyboardViewController
         }
     }
     
-    private func setSelectedButtonImage(button:UIButton, image:UIImage)
+    fileprivate func setSelectedButtonImage(_ button:UIButton, image:UIImage)
     {
-        button.setBackgroundImage(image, forState: .Selected)
-        button.setBackgroundImage(image, forState: .Highlighted)
+        button.setBackgroundImage(image, for: .selected)
+        button.setBackgroundImage(image, for: .highlighted)
     }
 }
 
 // MARK: - Tools
 extension PANumberKeyboardViewController
 {
-    private class func createWithColor(color:UIColor) -> UIImage
+    fileprivate class func createWithColor(_ color:UIColor) -> UIImage
     {
-        let rect = CGRectMake(0.0, 0.0, 1.0, 1.0)
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetFillColorWithColor(context, color.CGColor);
-        CGContextFillRect(context, rect)
+        context?.setFillColor(color.cgColor);
+        context?.fill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return image
+        return image!
     }
 }
 
